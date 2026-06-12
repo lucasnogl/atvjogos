@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 5970845250283583397}
   - component: {fileID: 5970845250283583387}
   - component: {fileID: 5970845250283583396}
+  - component: {fileID: -6329332140160665987}
+  - component: {fileID: 3729255795975350571}
+  - component: {fileID: -3965409800745645992}
   m_Layer: 5
   m_Name: Target
   m_TagString: Untagged
@@ -76,3 +79,63 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!136 &-6329332140160665987
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5970845250283583398}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &3729255795975350571
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5970845250283583398}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &-3965409800745645992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5970845250283583398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23c5b7e9c66e0d343b403c6c6fb30502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint:
+    position: {fileID: 0}
+    targetPrefab: {fileID: 0}
+    quantity: 1
+    scale: {x: 1, y: 1, z: 1}
+    rotation: {x: 0, y: 0, z: 0}
+    moveHorizontal: 0
+    moveVertical: 0
+    moveSpeed: 3
+    moveRange: 5
+    health: 1
+    pointsValue: 10
+  moveHorizontal: 0
+  moveVertical: 0
+  moveSpeed: 3
+  moveRange: 5
+  health: 1
+  pointsValue: 10
